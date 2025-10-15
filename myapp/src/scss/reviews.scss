@@ -6,4 +6,63 @@
 	@include basicContainer;
 	max-height: 832px;
 	padding-bottom: 95px;
+
+	.reviews-header {
+		padding-bottom: 27px;
+
+		.reviews-title {
+			@include sectionTitle;
+			margin-bottom: 12px;
+		}
+
+		.reviews-subtitle {
+			@include sectionSubTextUnderline;
+		}
+	}
+
+	.reviews-cards-container {
+		list-style: none;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 35px;
+
+		.reviews-card {
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+			background: rgba(255, 255, 255, 0.05);
+			backdrop-filter: blur(25px);
+			border-radius: 18px;
+			height: 478px;
+			width: 331px;
+
+			.reviews-card-text {
+				font-size: 24px;
+				font-weight: 200;
+				padding-bottom: 12px;
+			}
+
+			.reviews-card-date {
+				color: #ffffff80;
+				text-transform: uppercase;
+				font-size: 14px;
+				font-weight: 100;
+			}
+
+			.reviews-card-user {
+				margin-top: auto;
+				align-self: flex-end;
+				font-size: 38px;
+				font-weight: 200;
+			}
+		}
+
+		li:nth-child(4) {
+			img {
+				width: 52px;
+				height: 52px;
+			}
+		}
+	}
 }
