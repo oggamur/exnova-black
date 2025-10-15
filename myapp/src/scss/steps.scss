@@ -7,4 +7,74 @@
 	max-height: 930px;
 	padding-top: 33px;
 	padding-bottom: 18px;
+
+	.steps-header {
+		margin-bottom: 57px;
+		.steps-title {
+			@include sectionTitle;
+			margin-bottom: 12px;
+			line-height: 1.18;
+		}
+
+		.steps-subtitle {
+			@include sectionSubTextUnderline;
+		}
+	}
+
+	.steps-list {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+
+		.steps-item {
+			height: 197px;
+			max-width: 742px;
+			background: rgba(255, 255, 255, 0.05);
+			backdrop-filter: blur(25px);
+			border-radius: 18px;
+			padding: 21px 23px;
+
+			.steps-item-header {
+				max-height: 29px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				margin-bottom: 36px;
+
+				.steps-item-number {
+					color: white;
+					font-size: 24px;
+					font-style: normal;
+					font-weight: 700;
+					line-height: normal;
+				}
+
+				img {
+					width: 49px;
+					height: 49px;
+				}
+			}
+
+			.steps-item-text {
+				color: white;
+				font-size: 36px;
+				font-style: normal;
+				font-weight: 200;
+				line-height: normal;
+			}
+		}
+
+		.steps-item.white {
+			background-color: white;
+
+			.steps-item-number {
+				color: black;
+			}
+
+			.steps-item-text {
+				color: black;
+			}
+		}
+	}
 }
