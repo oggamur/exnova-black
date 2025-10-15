@@ -1,0 +1,10 @@
+@import './media.scss';
+@import './variables.scss';
+@import './mixins.scss';
+
+.steps-section {
+	@include basicContainer;
+	max-height: 930px;
+	padding-top: 33px;
+	padding-bottom: 18px;
+}

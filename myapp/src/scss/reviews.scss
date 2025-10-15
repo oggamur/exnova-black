@@ -1,0 +1,9 @@
+@import './media.scss';
+@import './variables.scss';
+@import './mixins.scss';
+
+.reviews-section {
+	@include basicContainer;
+	max-height: 832px;
+	padding-bottom: 95px;
+}

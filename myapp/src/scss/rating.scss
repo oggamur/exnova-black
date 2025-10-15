@@ -1,0 +1,10 @@
+@import './mixins';
+@import './variables';
+@import './media';
+
+.rating-section {
+	@include basicContainer;
+	max-height: 352px;
+	padding-top: 33px;
+	padding-bottom: 21px;
+}

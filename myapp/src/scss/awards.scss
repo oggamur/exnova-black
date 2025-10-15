@@ -1,0 +1,10 @@
+@import './media.scss';
+@import './variables.scss';
+@import './mixins.scss';
+
+.awards-section {
+	@include basicContainer;
+	max-height: 832px;
+	padding-bottom: 95px;
+	padding-top: 33px;
+}

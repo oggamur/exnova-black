@@ -1,0 +1,10 @@
+@import './mixins';
+@import './variables';
+@import './media';
+
+.experience-section {
+	@include basicContainer;
+	max-height: 414px;
+	padding-top: 94px;
+	padding-bottom: 94px;
+}

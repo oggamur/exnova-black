@@ -1,0 +1,10 @@
+@import './mixins';
+@import './variables';
+@import './media';
+
+.press-section {
+	@include basicContainer;
+	max-height: 832px;
+	padding-bottom: 140px;
+	padding-top: 33px;
+}

@@ -1,0 +1,63 @@
+@import './media';
+@import './variables';
+
+@mixin basicContainer {
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 50px;
+	width: 100%;
+
+	@include breakpoint-down('tab') {
+		padding: 0 20px;
+	}
+}
+
+@mixin sectionTitle {
+	font-family: $SFPro;
+	font-weight: 200;
+	font-size: 60px;
+	line-height: 1.1;
+	letter-spacing: 0.5px;
+	color: $white;
+	margin: 0;
+
+	@include breakpoint-down('tab') {
+		font-size: 36px;
+	}
+}
+
+@mixin sectionSubText {
+	font-family: $SFPro;
+	font-weight: 300;
+	font-size: 24px;
+	line-height: 1.5;
+	color: $grey;
+	margin: 0;
+
+	@include breakpoint-down('tab') {
+		font-size: 20px;
+	}
+}
+
+@mixin sectionSubTextUnderline {
+	font-family: $SFPro;
+	font-weight: 400;
+	font-style: regular;
+	font-size: 36px;
+	line-height: 1;
+	color: white;
+	text-decoration: underline;
+	text-underline-position: under;
+	text-underline-offset: 0px;
+	text-decoration-thickness: 1.5px;
+
+	@include breakpoint-down('tab') {
+		font-size: 24px;
+		text-align: left;
+	}
+
+	@include breakpoint-down('mob') {
+		font-size: 20px;
+		text-decoration-thickness: 1px;
+	}
+}

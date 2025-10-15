@@ -1,0 +1,13 @@
+@import './mixins';
+@import './variables';
+@import './media';
+
+.community-section {
+	@include basicContainer;
+	max-height: 374px;
+	padding-top: 33px;
+
+	.visually-hidden {
+		display: none;
+	}
+}

@@ -1,0 +1,10 @@
+@import './mixins';
+@import './variables';
+@import './media';
+
+.payment-section {
+	@include basicContainer;
+	max-height: 808px;
+	padding-bottom: 140px;
+	padding-top: 140px;
+}
