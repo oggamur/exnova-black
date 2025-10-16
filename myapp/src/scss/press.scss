@@ -2,9 +2,120 @@
 @import './variables';
 @import './media';
 
-.press-section {
+.press {
 	@include basicContainer;
 	max-height: 832px;
 	padding-bottom: 140px;
 	padding-top: 33px;
+
+	&-header {
+		margin-bottom: 68px;
+
+		&-title {
+			@include sectionTitle;
+		}
+	}
+
+	&-list {
+		display: flex;
+		gap: 12px;
+		flex-direction: row;
+		justify-content: space-between;
+
+		font-family: $SFPro;
+
+		&-background {
+			left: 50.5%;
+			position: absolute;
+			margin-top: 200px;
+			transform: translate(-50%, -50%) scaleX(1.2);
+			z-index: 0;
+
+			letter-spacing: 0.11em;
+			color: $grey;
+			font-family: $SFPro;
+			font-weight: 200;
+			font-size: 350px;
+			line-height: 1;
+			pointer-events: none;
+			text-transform: uppercase;
+			white-space: nowrap;
+			text-align: center;
+
+			@include breakpoint-down('tab') {
+				display: none;
+			}
+		}
+
+		&-link-wrapper {
+			width: 100%;
+
+			color: $white;
+			text-decoration: none;
+		}
+
+		&-card {
+			max-width: 582px;
+			padding: 25px 24px 20px 20px;
+
+			background-color: $black;
+			border-radius: 18px;
+
+			&-header {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				margin-bottom: 170px;
+
+				&-logo.forbes {
+					align-self: center;
+
+					height: 37px;
+				}
+
+				&-logo.el-cronista {
+					align-self: center;
+
+					height: 52px;
+				}
+			}
+
+			&-bottom {
+				max-width: 538px;
+
+				&-title {
+					margin-bottom: 12px;
+
+					font-size: 36px;
+					font-weight: 200;
+				}
+
+				&-title.black {
+					color: $black;
+				}
+
+				&-subtitle {
+					color: $grey;
+					font-size: 14px;
+					font-weight: 200;
+					line-height: 1.4;
+					text-transform: uppercase;
+				}
+
+				&-subtitle.black {
+					color: $black;
+					opacity: 0.4;
+				}
+			}
+		}
+
+		&-card.white {
+			background: $white;
+		}
+
+		&-card.transparent {
+			background: $asphalt;
+			backdrop-filter: blur(25px);
+		}
+	}
 }

@@ -2,9 +2,89 @@
 @import './variables.scss';
 @import './mixins.scss';
 
-.awards-section {
+.awards {
 	@include basicContainer;
-	max-height: 832px;
 	padding-bottom: 95px;
 	padding-top: 33px;
+	position: relative;
+	&-title {
+		@include sectionTitle;
+		margin-bottom: 12px;
+	}
+
+	&-subtitle {
+		@include sectionSubTextUnderline;
+		margin-bottom: 41px;
+	}
+
+	&-list {
+		display: flex;
+		gap: 52px;
+		justify-content: space-evenly;
+		list-style: none;
+
+		&-background {
+			position: absolute;
+			top: 60%;
+			left: 50%;
+			transform: translate(-50%, -50%) scaleX(1.2);
+			width: 300vw;
+			z-index: 0;
+
+			color: $grey;
+			font-family: $SFPro;
+			font-weight: 200;
+			font-size: 350px;
+			line-height: 1;
+			pointer-events: none;
+			text-transform: uppercase;
+			white-space: nowrap;
+			text-align: center;
+
+			@include breakpoint-down('tab') {
+				display: none;
+			}
+		}
+
+		&-card {
+			display: flex;
+			flex-direction: column;
+			padding: 20px;
+			height: 463px;
+
+			background: $asphalt;
+			backdrop-filter: blur(25px);
+			border-radius: 18.5px;
+			font-family: $SFPro;
+
+			&-title {
+				margin-right: 65px;
+				margin-bottom: 12px;
+				color: $white;
+				font-size: 36px;
+				font-weight: 200;
+			}
+
+			&-subtitle {
+				color: $white;
+				font-size: 14px;
+				font-style: normal;
+				font-weight: 200;
+				line-height: 1.4;
+				opacity: 0.4;
+				text-transform: uppercase;
+			}
+
+			&-date {
+				align-self: flex-end;
+				margin-top: auto;
+
+				color: $white;
+				font-size: 60px;
+				font-style: normal;
+				font-weight: 274;
+				line-height: normal;
+			}
+		}
+	}
 }

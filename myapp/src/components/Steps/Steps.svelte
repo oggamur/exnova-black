@@ -16,13 +16,13 @@
             </span>
             <p class="steps-item-text">Open a trading account<br> in a few seconds</p>
         </li>
-         <li class="steps-item">
+         <li class="steps-item black">
             <span class="steps-item-header">
                 <p class="steps-item-number">Step 2</p>
             </span>
             <p class="steps-item-text">Master your skills with<br> a $10.000 demo account</p>
         </li>
-        <li class="steps-item">
+        <li class="steps-item black">
             <span class="steps-item-header">
                 <p class="steps-item-number">Step 3</p>
             </span>

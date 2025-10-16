@@ -2,11 +2,35 @@
 @import './variables';
 @import './media';
 
-.community-section {
+.community {
 	@include basicContainer;
-	max-height: 374px;
+	margin-bottom: 139px;
 	padding-top: 33px;
 
+	&-title {
+		@include sectionTitle;
+		margin-bottom: 60px;
+	}
+
+	&-buttons {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: row;
+		gap: 32px;
+
+		list-style: none;
+
+		&-divider {
+			background: $dividerGrey;
+			width: 1px;
+			height: 70px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+		}
+	}
 	.visually-hidden {
 		display: none;
 	}

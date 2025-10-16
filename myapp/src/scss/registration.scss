@@ -11,35 +11,38 @@
 	.registration-header {
 		display: flex;
 		flex-direction: row;
-		justify-content: center;
 		margin: auto;
+		justify-content: center;
 
 		h2 {
+			margin-right: 77px;
+
 			font-size: 95px;
 			font-style: normal;
 			font-weight: 110;
 			line-height: normal;
 			text-transform: uppercase;
-			margin-right: 77px;
 		}
 	}
 
 	.registration-form {
-		max-height: 832px;
-		width: 545px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		max-height: 832px;
+		width: 545px;
+
 		background-color: white;
 
 		.registration-form-title {
+			margin-left: 54px;
+			margin-right: auto;
+			padding-bottom: 32px;
+
 			color: black;
 			font-size: 60px;
 			font-weight: 200;
 			text-transform: uppercase;
-			margin-left: 54px;
-			margin-right: auto;
-			padding-bottom: 32px;
 		}
 
 		form {
@@ -48,26 +51,28 @@
 			gap: 20px;
 
 			input {
-				width: 440px;
-				height: 55px;
-				background-color: #f3f3f3;
-				border: none;
-				outline: none;
 				margin-left: 54px;
 				margin-right: auto;
 				padding: 17px;
+				width: 440px;
+				min-width: 140px;
+				height: 55px;
+
+				background-color: #f3f3f3;
+				border: none;
+				outline: none;
 			}
 
 			button {
-				font-size: 16px;
-				font-weight: 100;
-				background-color: none;
-				width: 440px;
-				height: 55px;
-				background-color: transparent;
 				margin-left: 54px;
 				margin-right: auto;
+				width: 440px;
+				height: 55px;
+
+				background-color: transparent;
 				border: none;
+				font-size: 16px;
+				font-weight: 100;
 				outline: none;
 			}
 		}

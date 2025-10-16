@@ -23,7 +23,7 @@
             <time class="reviews-card-date" datetime="2021-12-24">December 24, 2021</time>
             <p class="reviews-card-user">dannyofficial</p>
         </li>
-        <li><img src="/images/reviews-block/arrow-right-white.svg" alt=""></li>
+        <li class="reviews-arrow"><img src="/images/reviews-block/arrow-right-white.svg" alt=""></li>
     </ul>
     
 </section>
