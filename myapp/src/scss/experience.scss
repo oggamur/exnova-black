@@ -2,9 +2,30 @@
 @import './variables';
 @import './media';
 
-.experience-section {
+.experience {
 	@include basicContainer;
-	max-height: 414px;
 	padding-top: 94px;
 	padding-bottom: 94px;
+
+	&-header {
+		align-items: center;
+		display: flex;
+		flex-direction: row;
+		gap: 151px;
+		justify-content: flex-start;
+
+		&-title {
+			@include sectionTitle;
+			margin-bottom: 12px;
+		}
+
+		&-discription {
+			p {
+				color: $white;
+				font-size: 46px;
+				font-weight: 200;
+				line-height: 75px;
+			}
+		}
+	}
 }

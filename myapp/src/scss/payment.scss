@@ -2,9 +2,34 @@
 @import './variables';
 @import './media';
 
-.payment-section {
+.payment {
 	@include basicContainer;
-	max-height: 808px;
 	padding-bottom: 140px;
 	padding-top: 140px;
+
+	&-header {
+		margin-bottom: 80px;
+
+		&-title {
+			@include sectionTitle;
+			margin-bottom: 20px;
+		}
+
+		&-subtitle {
+			@include sectionSubText;
+		}
+	}
+
+	&-logos-container_first {
+		display: flex;
+		gap: 160px;
+		justify-content: center;
+		margin-bottom: 50px;
+	}
+
+	&-logos-container_second {
+		display: flex;
+		gap: 160px;
+		justify-content: center;
+	}
 }

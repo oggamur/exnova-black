@@ -2,9 +2,88 @@
 @import './variables';
 @import './media';
 
-.rating-section {
+.rating {
 	@include basicContainer;
-	max-height: 352px;
 	padding-top: 33px;
 	padding-bottom: 21px;
+
+	&-header-title {
+		@include sectionTitle;
+		margin-bottom: 60px;
+	}
+
+	&-stats {
+		display: flex;
+		gap: 67px;
+		justify-content: space-between;
+		align-items: center;
+		padding: 38px 48px;
+		background: $asphalt;
+		border-radius: 60px;
+
+		&-divider {
+			background: $dividerGrey;
+			width: 1px;
+			height: 70px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+		}
+
+		&-item {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+
+			&-logo {
+				margin-right: 10px;
+			}
+
+			&-info {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+
+				&-header {
+					align-items: center;
+					display: flex;
+					gap: 12px;
+					flex-direction: row;
+					padding-bottom: 5px;
+
+					&-number {
+						color: $white;
+						font-size: 30px;
+						font-weight: 100;
+					}
+
+					&-stars {
+						display: flex;
+						gap: 5px;
+						flex-direction: row;
+					}
+				}
+
+				&-reviews {
+					margin-bottom: 5px;
+
+					color: $white;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 1.4;
+					text-transform: uppercase;
+				}
+
+				&-logo-name {
+					color: $white;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 1.4;
+					opacity: 0.4;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
 }
