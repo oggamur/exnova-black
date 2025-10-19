@@ -9,13 +9,13 @@
 	import Payment from '../components/Payment/Payment.svelte';
 	import Rating from '../components/Rating/Rating.svelte';
 	import Experience from '../components/Experience/Experience.svelte';
-
+	import Hero from '../components/Hero/Hero.svelte';
 </script>
 
 <svelte:head><title>Exnova black</title></svelte:head>
 
 <main>
-
+	<Hero />
 	<Experience />
 	<Rating />
 	<Payment />
