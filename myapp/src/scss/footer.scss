@@ -2,23 +2,23 @@
 @import './variables';
 @import './media';
 
-footer {
+.footer {
 	@include basicContainer;
 	padding-top: 85px;
 	padding-bottom: 85px;
 
-	.footer-header {
+	&-header {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		margin-bottom: 55px;
 
-		.footer-logo {
+		&-logo {
 			font-weight: 100;
 			font-size: 86px;
 		}
 
-		.footer-social-media {
+		&-social-media {
 			align-items: center;
 			display: flex;
 			flex-direction: row;
@@ -27,7 +27,7 @@ footer {
 
 			list-style-type: none;
 
-			.footer-social-media-item {
+			&-item {
 				padding: 15px;
 
 				border: 1px solid $white;
@@ -40,7 +40,7 @@ footer {
 		}
 	}
 
-	.footer-disclaimers {
+	&-disclaimers {
 		margin-bottom: 55px;
 		max-width: 1000px;
 
@@ -49,15 +49,12 @@ footer {
 		font-weight: 200;
 		line-height: 1.4;
 
-		.privacy {
-			padding-bottom: 15px;
-		}
-		.terms {
-			padding-bottom: 15px;
+		p {
+			margin-bottom: 15px;
 		}
 	}
 
-	.footer-email-address {
+	&-email-address {
 		padding-bottom: 55px;
 
 		font-family: $SFPro;
@@ -67,19 +64,19 @@ footer {
 		text-transform: uppercase;
 	}
 
-	.footer-bootom {
+	&-bootom {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 
-		.footer-bootom-privacy {
+		&-privacy {
 			color: $grey;
 			font-size: 20px;
 			font-weight: 200;
 			line-height: 1.4;
 		}
 
-		.footer-bootom-links {
+		&-links {
 			display: flex;
 			flex-direction: row;
 			gap: 15px;
@@ -88,7 +85,7 @@ footer {
 
 			list-style-type: none;
 
-			.footer-bootom-links-item a {
+			&-item a {
 				color: $white;
 				font-size: 20px;
 				font-weight: 200;

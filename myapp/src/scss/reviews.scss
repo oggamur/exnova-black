@@ -2,25 +2,25 @@
 @import './variables.scss';
 @import './mixins.scss';
 
-.reviews-section {
+.reviews {
 	@include basicContainer;
 	max-height: 832px;
 	padding-bottom: 95px;
 
-	.reviews-header {
+	&-header {
 		padding-bottom: 27px;
 
-		.reviews-title {
+		&-title {
 			@include sectionTitle;
 			margin-bottom: 12px;
 		}
 
-		.reviews-subtitle {
+		&-subtitle {
 			@include sectionSubTextUnderline;
 		}
 	}
 
-	.reviews-cards-container {
+	&-cards {
 		align-items: center;
 		display: flex;
 		flex-direction: row;
@@ -28,7 +28,7 @@
 
 		list-style: none;
 
-		.reviews-card {
+		&-item {
 			display: flex;
 			flex-direction: column;
 			height: 478px;
@@ -39,21 +39,21 @@
 			backdrop-filter: blur(25px);
 			border-radius: 18px;
 
-			.reviews-card-text {
+			&-text {
 				padding-bottom: 12px;
 
 				font-size: 24px;
 				font-weight: 200;
 			}
 
-			.reviews-card-date {
+			&-date {
 				color: #ffffff80;
 				font-size: 14px;
 				font-weight: 100;
 				text-transform: uppercase;
 			}
 
-			.reviews-card-user {
+			&-user {
 				align-self: flex-end;
 				margin-top: auto;
 
@@ -62,7 +62,7 @@
 			}
 		}
 
-		.reviews-arrow {
+		&-arrow {
 			img {
 				height: 52px;
 				width: 52px;

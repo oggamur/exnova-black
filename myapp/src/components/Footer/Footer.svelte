@@ -2,26 +2,26 @@
 	import '../../scss/footer.scss';
 </script>
 
-<footer>
+<footer class="footer">
 	<div class="footer-header">
-		<h2 class="footer-logo">EXNOVA</h2>
-		<ul class="footer-social-media">
-			<li class="footer-social-media-item">
+		<h2 class="footer-header-logo">EXNOVA</h2>
+		<ul class="footer-header-social-media">
+			<li class="footer-header-social-media-item">
 				<a href="#">
 					<img src="images/footer-block/twitter.svg" alt="twitter" />
 				</a>
 			</li>
-			<li class="footer-social-media-item">
+			<li class="footer-header-social-media-item">
 				<a href="#">
 					<img src="images/footer-block/youtube.svg" alt="Youtube" />
 				</a>
 			</li>
-			<li class="footer-social-media-item">
+			<li class="footer-header-social-media-item">
 				<a href="#">
 					<img src="images/footer-block/discord.svg" alt="discord" />
 				</a>
 			</li>
-			<li class="footer-social-media-item">
+			<li class="footer-header-social-media-item">
 				<a href="#">
 					<img src="images/footer-block/telegram.svg" alt="telegram" />
 				</a>

@@ -2,9 +2,9 @@
     import '../../scss/registration.scss';
 </script>
 
-<section class="registration-section">
+<section class="registration">
     <div class="registration-header">
-        <h2 class="registration-title">EXNOVA</h2>
+        <h2 class="registration-header-title">EXNOVA</h2>
     </div>
     <div class="registration-form">
         <label class="registration-form-title" for="email-input">Registration</label>

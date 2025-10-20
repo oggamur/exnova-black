@@ -2,33 +2,33 @@
 @import './variables.scss';
 @import './mixins.scss';
 
-.steps-section {
+.steps {
 	@include basicContainer;
 	padding-top: 33px;
 	padding-bottom: 18px;
 
-	.steps-header {
+	&-header {
 		margin-bottom: 57px;
-		.steps-title {
+		&-title {
 			@include sectionTitle;
 			margin-bottom: 12px;
 
 			line-height: 1.18;
 		}
 
-		.steps-subtitle {
+		&-subtitle {
 			@include sectionSubTextUnderline;
 		}
 	}
 
-	.steps-list {
+	&-list {
 		display: flex;
 		gap: 16px;
 		flex-direction: column;
 
 		list-style: none;
 
-		.steps-item {
+		&-item {
 			background: $asphalt;
 			backdrop-filter: blur(25px);
 			border-radius: 18.5px;
@@ -36,14 +36,14 @@
 			max-width: 742px;
 			padding: 21px 23px;
 
-			.steps-item-header {
+			&-header {
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
 
 				margin-bottom: 25px;
 
-				.steps-item-number {
+				&-number {
 					color: $white;
 					font-size: 24px;
 					font-style: normal;
@@ -57,7 +57,7 @@
 				}
 			}
 
-			.steps-item-text {
+			&-text {
 				color: $white;
 				font-size: 36px;
 				font-style: normal;
@@ -66,20 +66,20 @@
 			}
 		}
 
-		.steps-item.white {
+		&-item.white {
 			background-color: $white;
 
-			.steps-item-number {
+			.steps-list-item-number {
 				color: $black;
 			}
 
-			.steps-item-text {
+			.steps-list-item-text {
 				color: $black;
 			}
 		}
 
-		.steps-item.black {
-			.steps-item-header {
+		&-item.black {
+			.steps-list-item-header {
 				margin-bottom: 35px;
 			}
 		}
