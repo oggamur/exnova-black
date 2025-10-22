@@ -7,8 +7,16 @@
 	padding-top: 33px;
 	padding-bottom: 18px;
 
+	@include breakpoint-down('mob') {
+		padding: 19px 0 28px 18px;
+	}
+
 	&-header {
 		margin-bottom: 57px;
+
+		@include breakpoint-down('mob') {
+			margin-bottom: 80px;
+		}
 		&-title {
 			@include sectionTitle;
 			margin-bottom: 12px;
@@ -31,17 +39,27 @@
 		&-item {
 			background: $asphalt;
 			backdrop-filter: blur(25px);
-			border-radius: 18.5px;
+			border-radius: 18px;
 
 			max-width: 742px;
 			padding: 21px 23px;
 
+			@include breakpoint-down('mob') {
+				max-width: 341px;
+				padding: 10px 15px;
+			}
+
 			&-header {
 				display: flex;
 				flex-direction: row;
+				align-items: flex-start;
 				justify-content: space-between;
 
 				margin-bottom: 25px;
+
+				@include breakpoint-down('mob') {
+					margin-bottom: 10px;
+				}
 
 				&-number {
 					color: $white;
@@ -54,15 +72,22 @@
 				img {
 					width: 40px;
 					height: 40px;
+
+					@include breakpoint-down('mob') {
+						width: 35px;
+						height: 35px;
+					}
 				}
 			}
 
 			&-text {
 				color: $white;
 				font-size: 36px;
-				font-style: normal;
-				font-weight: 200;
-				line-height: normal;
+				font-weight: 300;
+
+				@include breakpoint-down('mob') {
+					font-size: 26px;
+				}
 			}
 		}
 
@@ -71,6 +96,11 @@
 
 			.steps-list-item-number {
 				color: $black;
+
+				@include breakpoint-down('mob') {
+					font-size: 17px;
+					font-weight: 500;
+				}
 			}
 
 			.steps-list-item-text {
@@ -81,6 +111,17 @@
 		&-item.black {
 			.steps-list-item-header {
 				margin-bottom: 35px;
+
+				@include breakpoint-down('mob') {
+					margin-bottom: 26px;
+				}
+			}
+
+			.steps-list-item-number {
+				@include breakpoint-down('mob') {
+					font-size: 17px;
+					font-weight: 500;
+				}
 			}
 		}
 	}

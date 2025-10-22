@@ -10,6 +10,10 @@
 	@include breakpoint-down('tab') {
 		padding: 0 20px;
 	}
+
+	@include breakpoint-down('mob') {
+		padding: 0 0;
+	}
 }
 
 @mixin sectionTitle {
