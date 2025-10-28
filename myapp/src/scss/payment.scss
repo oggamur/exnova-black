@@ -7,16 +7,30 @@
 	padding-bottom: 140px;
 	padding-top: 140px;
 
+	@include breakpoint-down('mob') {
+		padding: 35px 16px;
+	}
+
 	&-header {
 		margin-bottom: 80px;
 
+		@include breakpoint-down('mob') {
+			margin-bottom: 30px;
+		}
+
 		&-title {
 			@include sectionTitle;
+			max-width: 430px;
 			margin-bottom: 20px;
 		}
 
 		&-subtitle {
 			@include sectionSubText;
+			max-width: 550px;
+
+			@include breakpoint-down('mob') {
+				max-width: 320px;
+			}
 		}
 	}
 
@@ -25,11 +39,80 @@
 		gap: 160px;
 		justify-content: center;
 		margin-bottom: 50px;
+
+		@include breakpoint-down('mob') {
+			align-items: center;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 95px;
+			justify-content: flex-start;
+			width: 280px;
+			row-gap: 27px;
+
+			.boleto {
+				height: 28px;
+				width: 75px;
+			}
+
+			.master-card {
+				height: 61px;
+				width: 61px;
+			}
+
+			.picpay {
+				height: 30px;
+				width: 95px;
+			}
+
+			.ted {
+				height: 33px;
+				width: 95px;
+				margin-left: -35px;
+			}
+		}
 	}
 
 	&-logos-container_second {
 		display: flex;
 		gap: 160px;
 		justify-content: center;
+
+		@include breakpoint-down('mob') {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 140px;
+			justify-content: flex-start;
+			row-gap: 27px;
+
+			.v {
+				@include breakpoint-down('mob') {
+					height: 31px;
+					width: 31px;
+				}
+			}
+
+			.pix {
+				@include breakpoint-down('mob') {
+					height: 32px;
+					width: 91px;
+				}
+			}
+
+			.loteria {
+				@include breakpoint-down('mob') {
+					height: 31px;
+					width: 31px;
+				}
+			}
+
+			.perfect-money {
+				@include breakpoint-down('mob') {
+					height: 32px;
+					width: 167px;
+				}
+			}
+		}
 	}
 }

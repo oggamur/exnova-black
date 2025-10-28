@@ -7,12 +7,23 @@
 	padding-top: 94px;
 	padding-bottom: 94px;
 
+	@include breakpoint-down('mob') {
+		padding-bottom: 0;
+	}
+
 	&-header {
 		align-items: center;
 		display: flex;
 		flex-direction: row;
 		gap: 151px;
 		justify-content: flex-start;
+
+		@include breakpoint-down('mob') {
+			align-items: flex-start;
+			flex-direction: column;
+			row-gap: 47px;
+			padding: 53px 16px 89px 16px;
+		}
 
 		&-title {
 			@include sectionTitle;
@@ -25,6 +36,13 @@
 				font-size: 46px;
 				font-weight: 200;
 				line-height: 75px;
+
+				@include breakpoint-down('mob') {
+					font-size: 36px;
+					text-decoration: underline;
+					text-underline-position: from-font;
+					text-decoration-thickness: 1.5px;
+				}
 			}
 		}
 	}

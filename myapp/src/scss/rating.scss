@@ -7,9 +7,17 @@
 	padding-top: 33px;
 	padding-bottom: 21px;
 
+	@include breakpoint-down('mob') {
+		padding: 61px 16px;
+	}
+
 	&-header-title {
 		@include sectionTitle;
 		margin-bottom: 60px;
+
+		@include breakpoint-down('mob') {
+			margin-bottom: 51px;
+		}
 	}
 
 	&-stats {
@@ -21,6 +29,13 @@
 		background: $asphalt;
 		border-radius: 60px;
 
+		@include breakpoint-down('mob') {
+			background: none;
+			padding: 0;
+			flex-direction: column;
+			gap: 14px;
+		}
+
 		&-divider {
 			background: $dividerGrey;
 			width: 1px;
@@ -29,6 +44,10 @@
 			align-items: center;
 			justify-content: center;
 			position: relative;
+
+			@include breakpoint-down('mob') {
+				display: none;
+			}
 		}
 
 		&-item {
@@ -36,8 +55,32 @@
 			flex-direction: row;
 			align-items: center;
 
+			@include breakpoint-down('mob') {
+				background: $asphalt;
+				border-radius: 60px;
+				padding: 38px 48px;
+			}
+
 			&-logo {
 				margin-right: 10px;
+			}
+
+			.rating-stats-item-logo.trastpilot {
+				@include breakpoint-down('mob') {
+					margin-right: 0px;
+				}
+			}
+
+			.apple {
+				@include breakpoint-down('mob') {
+					margin-left: 0px;
+				}
+			}
+
+			.rating-stats-item-info.trastpilot {
+				@include breakpoint-down('mob') {
+					margin-right: 25px;
+				}
 			}
 
 			&-info {
@@ -83,6 +126,13 @@
 					opacity: 0.4;
 					text-transform: uppercase;
 				}
+			}
+		}
+
+		.rating-stats-item.trastpilot {
+			@include breakpoint-down('mob') {
+				padding-right: 22px;
+				padding-left: 17px;
 			}
 		}
 	}

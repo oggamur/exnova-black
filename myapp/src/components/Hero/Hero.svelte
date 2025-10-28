@@ -13,7 +13,7 @@
         </ul>
     </nav>
     <h1 class="hero-header">EXNOVA</h1>
-    <img class="hero-main-image" src="./images/hero-block/chart.png" alt="Notebook">
+    <img class="hero-main-image" src="./images/hero-block/main-chart.png" alt="Notebook">
     <div class="hero-stats">
         <div class="hero-stats-head">
             <div class="hero-stats-head-item">

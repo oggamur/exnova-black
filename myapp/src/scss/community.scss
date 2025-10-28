@@ -7,9 +7,21 @@
 	margin-bottom: 139px;
 	padding-top: 33px;
 
+	@include breakpoint-down('mob') {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		padding: 35px 16px 0 16px;
+		margin-bottom: 69px;
+	}
+
 	&-title {
 		@include sectionTitle;
 		margin-bottom: 60px;
+
+		@include breakpoint-down('mob') {
+			margin-bottom: 16px;
+		}
 	}
 
 	&-buttons {
@@ -21,6 +33,18 @@
 
 		list-style: none;
 
+		@include breakpoint-down('mob') {
+			gap: 18px;
+		}
+
+		&-item {
+			img {
+				@include breakpoint-down('mob') {
+					height: 27px;
+					width: 27px;
+				}
+			}
+		}
 		&-divider {
 			background: $dividerGrey;
 			width: 1px;
@@ -29,6 +53,10 @@
 			align-items: center;
 			justify-content: center;
 			position: relative;
+
+			@include breakpoint-down('mob') {
+				height: 39px;
+			}
 		}
 	}
 	.visually-hidden {

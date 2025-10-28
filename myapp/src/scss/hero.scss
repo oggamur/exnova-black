@@ -10,22 +10,35 @@
 	padding-top: 43px;
 	padding-bottom: 70px;
 
-	&-navigation-list {
-		display: flex;
-		flex-direction: row;
-		gap: 26px;
-		margin-bottom: 60px;
+	@include breakpoint-down('mob') {
+		padding: 20px 16px 0px 16px;
+	}
 
-		list-style: none;
+	&-navigation {
+		@include breakpoint-down('mob') {
+			align-self: start;
+		}
+		&-list {
+			display: flex;
+			flex-direction: row;
+			gap: 26px;
+			margin-bottom: 60px;
 
-		li {
-			a {
-				color: $white;
-				font-size: 15px;
-				font-weight: 200;
-				line-height: 1.4;
-				text-decoration-line: none;
-				text-transform: uppercase;
+			list-style: none;
+
+			@include breakpoint-down('mob') {
+				flex-direction: column;
+			}
+
+			li {
+				a {
+					color: $white;
+					font-size: 15px;
+					font-weight: 200;
+					line-height: 1.4;
+					text-decoration-line: none;
+					text-transform: uppercase;
+				}
 			}
 		}
 	}
@@ -33,11 +46,20 @@
 	&-header {
 		font-size: 109px;
 		font-weight: 100;
+
+		@include breakpoint-down('mob') {
+			font-size: 97px;
+		}
 	}
 
 	&-main-image {
 		max-height: 287px;
 		max-width: 486px;
+
+		@include breakpoint-down('mob') {
+			max-height: 247px;
+			max-width: 420px;
+		}
 	}
 
 	&-stats {
@@ -51,6 +73,10 @@
 		border-radius: 40px;
 		background: $asphalt;
 		backdrop-filter: blur(25px);
+
+		@include breakpoint-down('mob') {
+			display: none;
+		}
 
 		&-head {
 			display: flex;
@@ -120,6 +146,10 @@
 		font-weight: 400;
 		line-height: 1.4;
 		text-transform: uppercase;
+
+		@include breakpoint-down('mob') {
+			display: none;
+		}
 	}
 
 	&-sub-description {
@@ -131,5 +161,9 @@
 		line-height: 1.4;
 		text-transform: uppercase;
 		opacity: 0.4;
+
+		@include breakpoint-down('mob') {
+			display: none;
+		}
 	}
 }

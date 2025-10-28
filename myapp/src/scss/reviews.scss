@@ -4,11 +4,14 @@
 
 .reviews {
 	@include basicContainer;
-	max-height: 832px;
 	padding-bottom: 95px;
 
+	@include breakpoint-down('mob') {
+		padding: 0 16px 0 16px;
+	}
+
 	&-header {
-		padding-bottom: 27px;
+		margin-bottom: 27px;
 
 		&-title {
 			@include sectionTitle;
@@ -28,6 +31,12 @@
 
 		list-style: none;
 
+		@include breakpoint-down('mob') {
+			flex-direction: column;
+			gap: 16px;
+			padding-bottom: 61px;
+		}
+
 		&-item {
 			display: flex;
 			flex-direction: column;
@@ -38,6 +47,10 @@
 			background: rgba(255, 255, 255, 0.05);
 			backdrop-filter: blur(25px);
 			border-radius: 18px;
+
+			@include breakpoint-down('mob') {
+				width: 100%;
+			}
 
 			&-text {
 				padding-bottom: 12px;
@@ -66,6 +79,10 @@
 			img {
 				height: 52px;
 				width: 52px;
+			}
+
+			@include breakpoint-down('mob') {
+				display: none;
 			}
 		}
 	}

@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="rating-stats-divider"></div>
-        <div class="rating-stats-item">
+        <div class="rating-stats-item trastpilot">
             <img class="rating-stats-item-logo trastpilot" src="images/rating-block/logos/trastpilot-logo.svg" alt="Trastpilot logo">
             <div class="rating-stats-item-info trastpilot">
                 <div class="rating-stats-item-info-header">
