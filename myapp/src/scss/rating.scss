@@ -22,12 +22,16 @@
 
 	&-stats {
 		display: flex;
-		gap: 67px;
+		gap: auto;
 		justify-content: space-between;
 		align-items: center;
 		padding: 38px 48px;
 		background: $asphalt;
 		border-radius: 60px;
+
+		@include breakpoint-down('desk-s') {
+			flex-direction: column;
+		}
 
 		@include breakpoint-down('mob') {
 			background: none;
@@ -45,7 +49,7 @@
 			justify-content: center;
 			position: relative;
 
-			@include breakpoint-down('mob') {
+			@include breakpoint-down('desk-s') {
 				display: none;
 			}
 		}

@@ -40,36 +40,73 @@
 		justify-content: center;
 		margin-bottom: 50px;
 
-		@include breakpoint-down('mob') {
+		@include breakpoint-down('desk-s') {
 			align-items: center;
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;
 			gap: 95px;
 			justify-content: flex-start;
-			width: 280px;
+			width: 100%;
 			row-gap: 27px;
 
 			.boleto {
-				height: 28px;
-				width: 75px;
+				height: 38px;
+				width: 85px;
 			}
 
 			.master-card {
-				height: 61px;
-				width: 61px;
+				height: 101px;
+				width: 81px;
 			}
 
 			.picpay {
-				height: 30px;
-				width: 95px;
+				height: 50px;
+				width: 105px;
 			}
 
 			.ted {
-				height: 33px;
-				width: 95px;
+				height: 43px;
+				width: 115px;
 				margin-left: -35px;
 			}
+
+			@include breakpoint-down('mob') {
+				align-items: center;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				gap: 95px;
+				justify-content: flex-start;
+				width: 100%;
+				row-gap: 27px;
+
+				.boleto {
+					height: 28px;
+					width: 75px;
+				}
+
+				.master-card {
+					height: 61px;
+					width: 61px;
+				}
+
+				.picpay {
+					height: 30px;
+					width: 95px;
+				}
+
+				.ted {
+					height: 33px;
+					width: 95px;
+					margin-left: -35px;
+				}
+			}
+		}
+
+		@include breakpoint-down('mob') {
+			width: 280px;
+			margin-bottom: 27px;
 		}
 	}
 
@@ -77,6 +114,35 @@
 		display: flex;
 		gap: 160px;
 		justify-content: center;
+
+		@include breakpoint-down('desk-s') {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			gap: 100px;
+			justify-content: flex-start;
+			row-gap: 27px;
+
+			.v {
+				height: 45px;
+				width: 45px;
+			}
+
+			.pix {
+				height: 48px;
+				width: 101px;
+			}
+
+			.loteria {
+				height: 45px;
+				width: 45px;
+			}
+
+			.perfect-money {
+				height: 52px;
+				width: 177px;
+			}
+		}
 
 		@include breakpoint-down('mob') {
 			display: flex;
@@ -87,31 +153,23 @@
 			row-gap: 27px;
 
 			.v {
-				@include breakpoint-down('mob') {
-					height: 31px;
-					width: 31px;
-				}
+				height: 31px;
+				width: 31px;
 			}
 
 			.pix {
-				@include breakpoint-down('mob') {
-					height: 32px;
-					width: 91px;
-				}
+				height: 32px;
+				width: 91px;
 			}
 
 			.loteria {
-				@include breakpoint-down('mob') {
-					height: 31px;
-					width: 31px;
-				}
+				height: 31px;
+				width: 31px;
 			}
 
 			.perfect-money {
-				@include breakpoint-down('mob') {
-					height: 32px;
-					width: 167px;
-				}
+				height: 32px;
+				width: 167px;
 			}
 		}
 	}

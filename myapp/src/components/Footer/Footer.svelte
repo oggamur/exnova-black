@@ -39,11 +39,9 @@
 		<ul class="footer-bootom-links">
 			<li class="footer-bootom-links-item affiliate">
 				<a href="#">Affiliate Program</a>
-				<span>•</span>
 			</li>
 			<li class="footer-bootom-links-item privacy">
 				<a href="#">Privacy Policy</a>
-				<span>•</span>
 			</li>
 			<li class="footer-bootom-links-item terms">
 				<a href="#">Terms & Conditions</a>

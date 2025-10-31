@@ -39,6 +39,10 @@
 		justify-content: space-evenly;
 		list-style: none;
 
+		@include breakpoint-down('desk-s') {
+			gap: 20px;
+		}
+
 		@include breakpoint-down('mob') {
 			display: flex;
 			flex-direction: column;
@@ -64,7 +68,7 @@
 			white-space: nowrap;
 			text-align: center;
 
-			@include breakpoint-down('tab') {
+			@include breakpoint-down('desk-s') {
 				display: none;
 			}
 		}
@@ -87,6 +91,10 @@
 				color: $white;
 				font-size: 36px;
 				font-weight: 200;
+
+				@include breakpoint-down('desk-s') {
+					margin-right: auto;
+				}
 			}
 
 			&-subtitle {
