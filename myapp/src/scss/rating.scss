@@ -31,6 +31,7 @@
 
 		@include breakpoint-down('desk-s') {
 			flex-direction: column;
+			gap: 30px;
 		}
 
 		@include breakpoint-down('mob') {
@@ -67,24 +68,6 @@
 
 			&-logo {
 				margin-right: 10px;
-			}
-
-			.rating-stats-item-logo.trastpilot {
-				@include breakpoint-down('mob') {
-					margin-right: 0px;
-				}
-			}
-
-			.apple {
-				@include breakpoint-down('mob') {
-					margin-left: 0px;
-				}
-			}
-
-			.rating-stats-item-info.trastpilot {
-				@include breakpoint-down('mob') {
-					margin-right: 25px;
-				}
 			}
 
 			&-info {
@@ -130,13 +113,6 @@
 					opacity: 0.4;
 					text-transform: uppercase;
 				}
-			}
-		}
-
-		.rating-stats-item.trastpilot {
-			@include breakpoint-down('mob') {
-				padding-right: 22px;
-				padding-left: 17px;
 			}
 		}
 	}

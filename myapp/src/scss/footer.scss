@@ -7,7 +7,7 @@
 	margin-top: 85px;
 	padding-bottom: 85px;
 
-	@include breakpoint-down('mob') {
+	@include breakpoint-down('tab') {
 		margin-top: 90px;
 		padding: 0px 16px 35px 16px;
 	}
@@ -18,7 +18,7 @@
 		justify-content: space-between;
 		margin-bottom: 55px;
 
-		@include breakpoint-down('mob') {
+		@include breakpoint-down('tab') {
 			flex-direction: column;
 			row-gap: 20px;
 			margin-bottom: 35px;
@@ -28,7 +28,7 @@
 			font-weight: 100;
 			font-size: 86px;
 
-			@include breakpoint-down('mob') {
+			@include breakpoint-down('tab') {
 				font-size: 60px;
 			}
 		}
@@ -42,7 +42,7 @@
 
 			list-style-type: none;
 
-			@include breakpoint-down('mob') {
+			@include breakpoint-down('tab') {
 				gap: 19px;
 				justify-content: start;
 			}
@@ -51,7 +51,7 @@
 				padding: 15px;
 				border: 1px solid $white;
 
-				@include breakpoint-down('mob') {
+				@include breakpoint-down('tab') {
 					padding: 10px;
 				}
 
@@ -59,7 +59,7 @@
 					height: 34px;
 					width: 34px;
 
-					@include breakpoint-down('mob') {
+					@include breakpoint-down('tab') {
 						height: 25px;
 						width: 25px;
 					}
@@ -81,7 +81,7 @@
 			margin-bottom: 15px;
 		}
 
-		@include breakpoint-down('mob') {
+		@include breakpoint-down('tab') {
 			margin-bottom: 35px;
 
 			font-size: 15px;
@@ -97,7 +97,7 @@
 		font-weight: 100;
 		text-transform: uppercase;
 
-		@include breakpoint-down('mob') {
+		@include breakpoint-down('tab') {
 			padding-bottom: 35px;
 
 			font-size: 30px;
@@ -109,7 +109,7 @@
 		flex-direction: row;
 		justify-content: space-between;
 
-		@include breakpoint-down('mob') {
+		@include breakpoint-down('tab') {
 			flex-direction: column;
 			row-gap: 20px;
 		}
@@ -120,7 +120,7 @@
 			font-weight: 200;
 			line-height: 1.4;
 
-			@include breakpoint-down('mob') {
+			@include breakpoint-down('tab') {
 				font-size: 15px;
 			}
 		}
@@ -134,7 +134,7 @@
 
 			list-style-type: none;
 
-			@include breakpoint-down('mob') {
+			@include breakpoint-down('tab') {
 				gap: 10px;
 				justify-content: start;
 			}
@@ -151,7 +151,7 @@
 				text-underline-offset: auto;
 				text-underline-position: from-font;
 
-				@include breakpoint-down('mob') {
+				@include breakpoint-down('tab') {
 					font-size: 14px;
 				}
 			}
@@ -159,7 +159,7 @@
 			span {
 				padding-left: 5px;
 
-				@include breakpoint-down('mob') {
+				@include breakpoint-down('tab') {
 					display: none;
 				}
 			}

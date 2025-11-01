@@ -43,7 +43,7 @@
 			gap: 20px;
 		}
 
-		@include breakpoint-down('mob') {
+		@include breakpoint-down('tab') {
 			display: flex;
 			flex-direction: column;
 			gap: 10px;

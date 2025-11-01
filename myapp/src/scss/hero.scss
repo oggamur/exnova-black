@@ -15,9 +15,10 @@
 	}
 
 	&-navigation {
-		@include breakpoint-down('mob') {
+		@include breakpoint-down('tab') {
 			align-self: start;
 		}
+
 		&-list {
 			display: flex;
 			flex-direction: row;
@@ -26,7 +27,7 @@
 
 			list-style: none;
 
-			@include breakpoint-down('mob') {
+			@include breakpoint-down('tab') {
 				flex-direction: column;
 			}
 
@@ -56,9 +57,14 @@
 		max-height: 287px;
 		max-width: 486px;
 
-		@include breakpoint-down('mob') {
+		@include breakpoint-down('tab') {
+			margin-bottom: 0;
 			max-height: 247px;
 			max-width: 420px;
+		}
+
+		@include breakpoint-down('mob') {
+			margin-bottom: 0;
 		}
 	}
 
@@ -74,7 +80,7 @@
 		background: $asphalt;
 		backdrop-filter: blur(25px);
 
-		@include breakpoint-down('mob') {
+		@include breakpoint-down('tab') {
 			display: none;
 		}
 
@@ -147,7 +153,7 @@
 		line-height: 1.4;
 		text-transform: uppercase;
 
-		@include breakpoint-down('mob') {
+		@include breakpoint-down('tab') {
 			display: none;
 		}
 	}
@@ -162,7 +168,7 @@
 		text-transform: uppercase;
 		opacity: 0.4;
 
-		@include breakpoint-down('mob') {
+		@include breakpoint-down('tab') {
 			display: none;
 		}
 	}

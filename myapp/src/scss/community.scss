@@ -7,7 +7,7 @@
 	margin-bottom: 139px;
 	padding-top: 33px;
 
-	@include breakpoint-down('mob') {
+	@include breakpoint-down('tab') {
 		display: flex;
 		flex-direction: column;
 		gap: 10px;
@@ -19,7 +19,7 @@
 		@include sectionTitle;
 		margin-bottom: 60px;
 
-		@include breakpoint-down('mob') {
+		@include breakpoint-down('tab') {
 			margin-bottom: 16px;
 		}
 	}
@@ -33,12 +33,17 @@
 
 		list-style: none;
 
-		@include breakpoint-down('mob') {
+		@include breakpoint-down('tab') {
 			gap: 18px;
 		}
 
 		&-item {
 			img {
+				@include breakpoint-down('tab') {
+					height: 33px;
+					width: 33px;
+				}
+
 				@include breakpoint-down('mob') {
 					height: 27px;
 					width: 27px;
@@ -53,6 +58,10 @@
 			align-items: center;
 			justify-content: center;
 			position: relative;
+
+			@include breakpoint-down('tab') {
+				height: 49px;
+			}
 
 			@include breakpoint-down('mob') {
 				height: 39px;
